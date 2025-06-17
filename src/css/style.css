@@ -1,0 +1,36 @@
+:root {
+  --segundario: #352D40;
+  --background: #DBCDA4;
+  --texto: #0f0011;
+  --cor_icone: #CBC4CF;
+}
+
+body {
+  background-color: var(--cor_icone);
+  color: var(--texto);
+}
+
+header {
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 768px;
+  min-height: 100%;
+  box-sizing: content-box;
+}
+
+.active {
+  color: #6B4945;
+  font-weight: bold;
+}
+
+.tag-valor {
+  background-color: var(--segundario);
+  color: white;
+  width: 100%;
+}
+
+.valor::before {
+  content: "R$";
+}
